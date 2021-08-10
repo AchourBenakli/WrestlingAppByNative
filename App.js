@@ -4,7 +4,7 @@ import Header from './src/components/HeaderComponent/Header';
 
 
 
-const App = () => {
+function App() {
   return (
     <SafeAreaProvider>
       <Header />
