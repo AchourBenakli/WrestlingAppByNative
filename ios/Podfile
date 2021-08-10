@@ -12,6 +12,10 @@ target 'Project' do
     :hermes_enabled => false
   )
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
   target 'ProjectTests' do
     inherit! :complete
     # Pods for testing
@@ -21,9 +25,9 @@ target 'Project' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  # use_flipper!()
 
-  post_install do |installer|
-    react_native_post_install(installer)
-  end
+  # post_install do |installer|
+  #   react_native_post_install(installer)
+  # end
 end
